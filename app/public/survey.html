@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    ›<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
     <title>Document</title>
@@ -40,7 +40,7 @@
     </select>
 
         <h3><strong>Question 2</strong></h3>
-        <h4>Generally speaking, you are a creative person</h4>
+        <h4>You consider yourself an active and adventurous person.</h4>
         <select data-placeholder="" class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -51,7 +51,7 @@
     </select>
 
         <h3><strong>Question 3</strong></h3>
-        <h4>Money is important to me</h4>
+        <h4>Meetins my goals is important to me.</h4>
         <select data-placeholder="" class="chosen-select" id="q3">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -62,7 +62,7 @@
     </select>
 
         <h3><strong>Question 4</strong></h3>
-        <h4>I like animals</h4>
+        <h4>I love nature and the outdoors.</h4>
         <select data-placeholder="" class="chosen-select" id="q4">
       <option value=""></option>
       <option value="1" selected>1 (Strongly Disagree)</option>
@@ -73,7 +73,7 @@
     </select>
 
         <h3><strong>Question 5</strong></h3>
-        <h4>I prefer indoor activity over outdoor activity</h4>
+        <h4>My career and development are important to me.</h4>
         <select data-placeholder="" class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -95,7 +95,7 @@
     </select>
 
         <h3><strong>Question 7</strong></h3>
-        <h4>I want a drinking buddy</h4>
+        <h4>I enjoy going out on the weekends.</h4>
         <select data-placeholder="" class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -106,7 +106,7 @@
     </select>
 
         <h3><strong>Question 8</strong></h3>
-        <h4>I complete my responsibilities before I go have fun</h4>
+        <h4>I consider myself to be responsible.. </h4>
         <select data-placeholder="" class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -117,7 +117,7 @@
     </select>
 
         <h3><strong>Question 9</strong></h3>
-        <h4>I like to travel</h4>
+        <h4>Traveling is very important to me.</h4>
         <select data-placeholder="" class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -128,7 +128,7 @@
     </select>
 
         <h3><strong>Question 10</strong></h3>
-        <h4>Being around people energizes me</h4>
+        <h4>I enjoy being around people.</h4>
         <select data-placeholder="" class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -183,29 +183,37 @@
                 if ($(this).val() === "") isValid = false;
             });
             return isValid;
+            
+           
         }
+
             if(validateForm() === true) {
+                console.log($("#name"))
                 var userData = {
-                    name: $("#name".val(),
-                    photo: $("#photo".val(),
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
                     scores: [
-                        $("q1").val(),
-                        $("q2").val(),
-                        $("q3").val(),
-                        $("q4").val(),
-                        $("q5").val(),
-                        $("q6").val(),
-                        $("q7").val(),
-                        $("q8").val(),
-                        $("q9").val(),
-                        $("q10").val()
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
                     ]  
+                    
                  };
+
+                
                 var currentURL = window.location.origin;
-                $.post(currentURL + "/api/friends", userData, function(){
+                $.post(currentURL + "/api/new", userData, function(data){
                     $("#matchName").text(data.name);
                     $("#matchImg").attr("src", data.photo);
-                    $("#resultsModal").modal("toggle")  
+                    $("#resultsModal").modal("show");
+                    console.log($("#resultsModal"));
                 });
                       } else {
                           alert("Please fill out all fields")
