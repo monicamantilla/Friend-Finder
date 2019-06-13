@@ -62,18 +62,18 @@ module.exports = function (app){
         console.log("Scores: " + userScores );
 
         var sum =  b.reduce((a,b) => a + b, 0 );
-         console.log("Sum of user scores" +  sum);
-         console.log("Best match friend diff" + bestMatch.friendDifference);
+         console.log("Sum of user scores " +  sum);
+         console.log("Best match friend diff " + bestMatch.friendDifference);
 
          console.log(friends);
          for(var i = 0; i < friends.length; i++){
              console.log(friends[i].name);
              scoreDiff = 0;
-             console.log("Total Diff" + scoreDiff);
-             console.log("Best match friend diff" + bestMatch.friendDifference);
+             console.log("Total Diff " + scoreDiff);
+             console.log("Best match friend diff " + bestMatch.friendDifference);
 
              var bfriendScore = friends[i].scores.reduce((a,b) => a + b, 0 );
-             console.log("Total Friend Score" + bfriendScore);
+             console.log("Total Friend Score " + bfriendScore);
              scoreDiff += Math.abs(sum - bfriendScore);
              console.log("----->" + scoreDiff);
 
@@ -82,13 +82,13 @@ module.exports = function (app){
                  bestMatch.photo = friends[i].photo;
                  bestMatch.friendDifference = scoreDiff;
              }
-             console.log(scoreDiff + "Total Difference")
+             console.log(scoreDiff + "Total Difference ")
          }
             console.log(bestMatch);
 
             console.log(friends);
             friends.push(userData);
-            console.log("New User Added");
+            console.log("New User Added ");
             console.log(userData);
             res.json(bestMatch);
     })
