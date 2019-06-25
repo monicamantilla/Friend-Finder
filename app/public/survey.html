@@ -1,226 +1,181 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
-    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Survey</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Friend Finder</h1>
-            <p class="lead">Find your forever friend here!</p>
-            <hr class="my-4">
-            <p>Answer a few questions and find out who your new best friend is!</p>
-
-        <h2>Survey Questions</h2>
-        <hr>
-        <h3><strong>About You</strong></h3>
-        <h4>Name </h4>
-        <input type="text" name="" id="name" class="form-control" required>
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" name="" id="photo" class="form-control" required>
-        <hr>
-        <h3><strong>Question 1</strong></h3>
-        <h4>You like to take risks and challenges excite you.</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5" selected>5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 2</strong></h3>
-        <h4>You consider yourself an active and adventurous person.</h4>
-        <select data-placeholder="" class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2" selected>2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 3</strong></h3>
-        <h4>Meetins my goals is important to me.</h4>
-        <select data-placeholder="" class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4" selected>4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 4</strong></h3>
-        <h4>I love nature and the outdoors.</h4>
-        <select data-placeholder="" class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1" selected>1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 5</strong></h3>
-        <h4>My career and development are important to me.</h4>
-        <select data-placeholder="" class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4" selected>4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 6</strong></h3>
-        <h4>Religion is very important to me</h4>
-        <select data-placeholder="" class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5" selected>5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 7</strong></h3>
-        <h4>I enjoy going out on the weekends.</h4>
-        <select data-placeholder="" class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2" selected>2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 8</strong></h3>
-        <h4>I consider myself to be responsible.. </h4>
-        <select data-placeholder="" class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4" selected>4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 9</strong></h3>
-        <h4>Traveling is very important to me.</h4>
-        <select data-placeholder="" class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4" selected>4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-        <h3><strong>Question 10</strong></h3>
-        <h4>I enjoy being around people.</h4>
-        <select data-placeholder="" class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2" selected>2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-        <br>
-        <br>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
-    </button>
-
-
-    <div id ="resultsModal" class ="modal fade" role="dialog">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                        <div class = "modal-header">
-                            <button type="button" class="close" data-dismiss="modal">
-                                &times;
-                            </button>
-                        <h2 class = "modal-title"><strong>Best Match</strong></h2>
-                        </div>  
-                    <div class = "modal-body">
-                        <h2 id="matchName"></h2>
-                        <img
-                            id= "matchImg"
-                            src = "https://via.placeholder.com/400x400"
-                            alt= "Placeholder image in case pic doesn't fit"
-                        />
-                    </div>  
-                    <div class = "modal-footer">
-                        <button type="button"  class="btn btn-default" data-dismiss="modal">
-                            Close
-                        </button>
-
-                    </div>
-
-                </div>
-
+        <h1 class="text-center m-5">Friend Finder Quiz</h1>
+    
+        <!-- form -->
+        <form id="friend-form">
+            <div class="user-info">
+                Name<br>
+                <input type="text" name="name" style="width: 100%;" required><br>
+                Link to photo<br>
+                <input type="text" name="photo" style="width: 100%;" required><br>
             </div>
-
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 1</strong><br>
+                You enjoy vibrant social events with lots of people.<br>
+                <input type="radio" name="q1" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q1" value="2"> Agree<br>
+                <input type="radio" name="q1" value="3"> Neutral<br>
+                <input type="radio" name="q1" value="4"> Disagree<br>
+                <input type="radio" name="q1" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 2</strong><br>
+                You often spend time exploring unrealistic yet intriguing ideas.<br>
+                <input type="radio" name="q2" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q2" value="2"> Agree<br>
+                <input type="radio" name="q2" value="3"> Neutral<br>
+                <input type="radio" name="q2" value="4"> Disagree<br>
+                <input type="radio" name="q2" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 3</strong><br>
+                Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.<br>
+                <input type="radio" name="q3" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q3" value="2"> Agree<br>
+                <input type="radio" name="q3" value="3"> Neutral<br>
+                <input type="radio" name="q3" value="4"> Disagree<br>
+                <input type="radio" name="q3" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 4</strong><br>
+                You often think about what you should have said in a conversation long after it has taken place.<br>
+                <input type="radio" name="q4" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q4" value="2"> Agree<br>
+                <input type="radio" name="q4" value="3"> Neutral<br>
+                <input type="radio" name="q4" value="4"> Disagree<br>
+                <input type="radio" name="q4" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 5</strong><br>
+                If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.<br>
+                <input type="radio" name="q5" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q5" value="2"> Agree<br>
+                <input type="radio" name="q5" value="3"> Neutral<br>
+                <input type="radio" name="q5" value="4"> Disagree<br>
+                <input type="radio" name="q5" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 6</strong><br>
+                People can rarely upset you.<br>
+                <input type="radio" name="q6" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q6" value="2"> Agree<br>
+                <input type="radio" name="q6" value="3"> Neutral<br>
+                <input type="radio" name="q6" value="4"> Disagree<br>
+                <input type="radio" name="q6" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 7</strong><br>
+                You often rely on other people to be the ones to start a conversation and keep it going.<br>
+                <input type="radio" name="q7" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q7" value="2"> Agree<br>
+                <input type="radio" name="q7" value="3"> Neutral<br>
+                <input type="radio" name="q7" value="4"> Disagree<br>
+                <input type="radio" name="q7" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 8</strong><br>
+                If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on track as soon as possible.<br>
+                <input type="radio" name="q8" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q8" value="2"> Agree<br>
+                <input type="radio" name="q8" value="3"> Neutral<br>
+                <input type="radio" name="q8" value="4"> Disagree<br>
+                <input type="radio" name="q8" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 9</strong><br>
+                You rarely worry if you made a good impression on someone you met.<br>
+                <input type="radio" name="q9" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q9" value="2"> Agree<br>
+                <input type="radio" name="q9" value="3"> Neutral<br>
+                <input type="radio" name="q9" value="4"> Disagree<br>
+                <input type="radio" name="q9" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 10</strong><br>
+                It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.<br>
+                <input type="radio" name="q10" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q10" value="2"> Agree<br>
+                <input type="radio" name="q10" value="3"> Neutral<br>
+                <input type="radio" name="q10" value="4"> Disagree<br>
+                <input type="radio" name="q10" value="5"> Strongly Disagree<br>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary m-5">Submit</button>
+        </form>
+    
+    
+        <!-- Modal -->
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog"
+            aria-labelledby="friendModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Your best match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" id="friend-result" style="color: black;">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-<script type="text/javascript">
-    $("#submit").on("click", function(){
-        function validateForm(){
-            var isValid = true;
-            $(".form-control").each(function(){
-                if ($(this).val() === "") isValid = false;
-            });
-            $(".chosen-select").each(function(){
-                if ($(this).val() === "") isValid = false;
-            });
-            return isValid;
-            
-           
-        }
 
-            if(validateForm() === true) {
-                console.log($("#name"))
-                var userData = {
-                    name: $("#name").val(),
-                    photo: $("#photo").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val()
-                    ]  
-                    
-                 };
 
-                
-                var currentURL = window.location.origin;
-                $.post(currentURL + "/api/new", userData, function(data){
-                    $("#matchName").text(data.name);
-                    $("#matchImg").attr("src", data.photo);
-                    $("#resultsModal").modal("show");
-                    console.log($("#resultsModal"));
-                });
-                      } else {
-                          alert("Please fill out all fields")
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
 
-                }
-                });
-            
-</script>
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+    <script>
+        $('#friend-form').on('submit', () => {
+            event.preventDefault()
+            let newFriend = {
+                name: $('input[name="name"]').val().trim(),
+                photo: $('input[name="photo"]').val().trim(),
+                scores: [
+                    $('input[name="q1"]:checked').val().trim(),
+                    $('input[name="q2"]:checked').val().trim(),
+                    $('input[name="q3"]:checked').val().trim(),
+                    $('input[name="q4"]:checked').val().trim(),
+                    $('input[name="q5"]:checked').val().trim(),
+                    $('input[name="q6"]:checked').val().trim(),
+                    $('input[name="q7"]:checked').val().trim(),
+                    $('input[name="q8"]:checked').val().trim(),
+                    $('input[name="q9"]:checked').val().trim(),
+                    $('input[name="q10"]:checked').val().trim()
+                ]
+            }
+            $.post('/api/friends', newFriend)
+                .then( data => {
+                    console.log(`name: ${data.name} \nphoto: ${data.photo} \nscores: ${data.scores}`)
+                    $('#friend-result').html(
+                        `
+                            <img src=${data.photo} width=50% height=auto alt="no photo available">
+                            <h1>${data.name}</h1>
+                        `
+                    )
+                    $('#friendModal').modal('toggle')
+                })
+        })
+    </script>
 </body>
 </html>
