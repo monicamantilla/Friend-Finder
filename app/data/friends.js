@@ -9,12 +9,12 @@ let friends = [
 {
     name : "Rachel",
     photo: "https://fustany.com/images/ads/background/fustany-rachel-haircuts-in-friends.jpg ",
-    scores: [2, 3, 4, 5, 6, 7, 3 ,4, 6, 1]
+    scores: [1, 1, 1, 1, 1, 4, 4 ,5, 6, 1]
 },
 {
     name : "Joey",
     photo: " https://vignette.wikia.nocookie.net/friends/images/f/f5/JoeyTribbiani.jpg/revision/latest?cb=20180424154245",
-    scores: [2, 3, 4, 5, 6, 7, 3 ,4, 6, 1]
+    scores: [6, 6, 4, 1, 3, 2, 1, 5, 8, 1]
 },
 {
     name : "Chandler",
