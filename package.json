@@ -19,7 +19,7 @@
   "homepage": "https://github.com/monicamantilla/Friend-Finder#readme",
   "keywords": [],
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "heroku": "^7.25.0",
     "path": "^0.12.7"
   }
